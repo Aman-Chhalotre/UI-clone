@@ -1,0 +1,136 @@
+@media screen and (max-width: 425px) {
+    nav{
+        padding: 6vh 2vh;
+    }
+    #menu{
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 8px 15px 8px 15px;
+    }
+    #menu-content{
+        position: absolute;
+        height: 0vh;
+        width: 100%;
+        z-index: 100;
+        background-color: #FF5F38;
+    }
+    #menu-middleContent{
+        margin:0px 20px;
+    }
+    #menu-middleContent h1{
+        font-size: 45px;
+    }
+    #menu-lowerContent{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    #menu-lowerContent h4{
+        font-weight: 100;
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    #menu-lowerContent div{
+        display: flex;
+        gap: 10px;
+    }
+    #page-2{
+        height: 90vh;
+        padding:50px 1.5vh;
+    }
+    #page2-upperText h2 span{
+        font-size: 15px;
+    }
+    #page2-text h1 span{
+        font-size: 30px;
+    }
+    #page-3{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #page3-content h1 span{
+        font-size: 30px;
+    }
+    #page-4{
+        height: 160vh;
+        padding:10px 3vh;
+    }
+    #page4-text h2{
+        font-size: 15px;
+    }
+    #iframes{
+        display: block;
+    }
+    #iframes .box{
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #page-5{
+        height: 60vh;
+        padding:10px 1.5vh;
+    }
+    #page5-upperText h2{
+        font-size: 20px;
+    }
+    #page5-lowerText h1{
+        font-size: 30px;
+    }
+    #page-6{
+        height: 50vh;
+    }
+    #page6-content video{
+        height: 400px;
+        width: 350px;
+    }
+    #page-7{
+        height: 80vh;
+        padding: 20px 1.5vh;
+    }
+    #page7-upperText{
+        padding-bottom: 20px;
+    }
+    #page7-upperText h2{
+        font-size: 20px;
+    }
+    #page7-lowerText h1{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    #page-8{
+        height: 40vh;
+    }
+    #page8-content{
+        padding: 65px 1.5vh 2vh 1.5vh;
+    }
+    #page8-content h1{
+        font-size: 35px;
+    }
+    #swipper{
+        height: 80%;
+    }
+    .swiper{
+        height: 80%;
+    }
+    .swiper-slide{
+        gap: 5px;
+    }
+    #page-9{
+        height: 50vh;
+    }
+    #page9-content h1{
+        font-size: 30px;
+    }
+    footer{
+        height: 100vh;
+        padding: 0px 1.5vh;
+        /* background-color: red; */
+    }
+    #footer-upperBox{
+        padding: 0px;
+    }
+  }

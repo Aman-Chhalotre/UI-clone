@@ -1,0 +1,565 @@
+@font-face {
+    font-family: rejoy;
+    src: url(./assets/Rejouice-Headline.woff2);
+}
+@font-face {
+    font-family: nb;
+    src: url(./assets/NBInternationalProBoo.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color:floralwhite;
+}
+#page-1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#cursor{
+    height: 8vw;
+    width: 8vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nb;
+    font-size: 1.5vw;
+    transform: translate(-50%,-50%);
+}
+#blackscreen{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blackscreen h2{
+    color: white;
+    font-family: nb;
+    font-weight: 100;
+    display: flex;
+}
+#blackscreen h2 span{
+    display: block;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+nav{
+    height: 5vh;
+    padding: 6vh;
+    color: white;
+    font-family: nb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    font-weight: 100;
+}
+#menu{
+    cursor: pointer;
+}
+#close{
+    cursor: pointer;
+}
+#menu-content{
+    position: absolute;
+    height: 0vh;
+    width: 100%;
+    z-index: 100;
+    background-color: #FF5F38;
+    font-family: nb;
+}
+#menu-upperContent{
+    margin: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    visibility: hidden;
+}
+#menu-upperContent h3{
+    font-weight: 100;
+}
+#menu-middleContent{
+    margin:0px 48px;
+    padding-bottom: 15px;
+    display: flex;
+    /* border-bottom: 1px solid black; */
+    visibility: hidden;
+}
+#menu-middleContent h1{
+    font-size: 45px;
+    font-weight: 100;
+}
+#menu-lowerContent{
+    padding: 10px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    visibility: hidden;
+}
+#menu-lowerContent h4{
+    font-weight: 100;
+}
+#menu-lowerContent div{
+    display: flex;
+    gap: 30px;
+}
+#rejouice{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#rejouice span{
+    font-size: 25vw;
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: 100;
+    font-family: rejoy;
+    display: block;
+    line-height: 30vh;
+}
+#page-2{
+    height: 100vh;
+    width: 100%;
+    padding:65px 6vh;
+    font-family: nb;
+}
+#page2-upperText{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+}
+#page2-upperText h2{
+    font-weight: 100;
+    position: relative;
+}
+#page2-upperText h2 span{
+    display: block;
+}
+#page2-upperText div{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: floralwhite;
+}
+#line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(100, 100, 100);
+}
+#page2-text{
+    margin-top: 5vh;
+    font-size: 4.4vh;
+    width: 100%;
+}
+#page2-text h1{
+    font-weight: 100;
+    position: relative;
+}
+#page2-text h1 span{
+    display: block;
+}
+#page2-text div{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    background-color: floralwhite;
+}
+#page-3{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page3-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: nb;
+}
+#page3-content h4{
+    font-weight: 100;
+    margin-bottom: 2vh;
+}
+#models{
+    height: 10px;
+    width: 20px;
+    padding:3px 8px;
+    color: white; 
+    border-radius: 10px;
+    font-size: 1.8vh;
+    background-color: black;
+}
+#page3-content h1{
+    font-weight: 100;
+    font-size: 9vh;
+    text-decoration: underline;
+    position: relative;
+}
+#page3-content h1 span{
+    display: block;
+}
+#page3-content div{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    background-color: floralwhite;
+}
+#page-4{
+    height: 100vh;
+    width: 100%;
+    padding:65px 6vh;
+}
+#page4-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+#page4-text h2{
+    font-family: nb;
+    font-weight: 100;
+}
+#iframes{
+    height: 100%;
+    width: 100%;;
+    display: flex;
+    gap: 1.5vh;
+}
+#iframes div{
+    height: 100%;
+    width: 33%;
+    background-color: black;
+    position: relative;
+}
+#iframes div img{
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    z-index: 2;
+}
+#iframes .box img:hover{
+    opacity: 0;
+    transition: 0.8s;
+}
+#page-5{
+    height: 80vh;
+    width: 100%;
+    padding: 65px 6vh;
+    margin-bottom: 130px;
+}
+#page5-content{
+    padding-top: 10vh;
+}
+#page5-upperText{
+    font-family: nb;
+    padding-bottom: 3vh;
+}
+#page5-upperText h2{
+    font-weight: 100;
+    position: relative;
+}
+#page5-upperText h2 span{
+    display: block;
+}
+#page5-upperText div{
+    position: absolute;
+    height: 30px;
+    width: 30%;
+    background-color: floralwhite;
+}
+#page5-line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(109, 109, 109);
+}
+#page5-lowerText{
+    padding-top: 3vh;
+    font-size: 4.5vh;
+}
+#page5-lowerText h1{
+    position: relative;
+}
+#page5-lowerText h1 span{
+    display: block;
+    font-weight: 100;
+    font-family: nb;
+}
+#page5-lowerText div{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    background-color: floralwhite;
+}
+#page-6{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #page6-cursor{
+    height: 8vw;
+    width: 8vw;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nb;
+    font-size: 1.5vw;
+    transform: translate(-50%,-50%);
+} */
+#page6-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#page6-content video{
+    height: 1000px;
+    width: 950px;
+    position: absolute;
+}
+#circle{
+    height: 500px;
+    width: 500px;
+    border: 1px solid white;
+    z-index: 100;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-family: nb;
+    color: white;
+}
+#page-7{
+    height: 100vh;
+    width: 100%;
+    padding: 65px 6vh;
+    margin-top: 150px;
+}
+#page7-upperText{
+    font-family: nb;
+    padding-bottom: 3vh;
+}
+#page7-upperText h2{
+    font-weight: 100;
+    position: relative;
+}
+#page7-upperText h2 span{
+    display: block;
+}
+#page7-upperText div{
+    position: absolute;
+    height: 30px;
+    width: 30%;
+    background-color: floralwhite;
+}
+#page7-line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(109, 109, 109);
+}
+#page7-lowerText h1{
+    font-family: nb;
+    font-weight: 100;
+    font-size: 3.5em;
+    position: relative;
+}
+#page7-lowerText h1 span{
+    display: block;
+}
+#page7-lowerText div{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    background-color: floralwhite;
+}
+#page-8{
+    height: 100vh;
+    width: 100%;
+}
+#page8-content{
+    padding: 65px 6vh 5vh 6vh;
+}
+#page8-content h1{
+    font-size: 7.8em;
+    font-family: rejoy;
+    font-weight: 100;
+}
+#page8-line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(109, 109, 109);
+}
+#swipper{
+    height: 60vh;
+    width: 100%;
+}
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#page-9{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#page9-content h4{
+    font-weight: 100;
+    font-family: nb;
+}
+#page9-content h1{
+    font-size: 3.5em;
+    position: relative;
+}
+#page9-content h1 span{
+    display: block;
+    font-weight: 100;
+    font-family: nb;
+    text-decoration: underline;
+}
+#page9-content div{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: floralwhite;
+}
+footer{
+    height: 110vh;
+    width: 100%;
+    background-color: #0E0E0E;
+    padding: 0px 6vh;
+    font-family: nb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#footer-upperBox{
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#upperBox-left h2{
+    font-weight: 100;
+}
+#upperBox-left button{
+    padding: 15px 25px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+    font-size: 0.9em;
+}
+#upperBox-left button:hover{
+    background-color: white;
+    transition: .5s;
+    color: black;
+}
+#upperBox-right h4{
+    margin-bottom: 5px;
+}
+#upperBox-right h4 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+#footer-middleBox{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 50;
+}
+#footer-middleBox h4{
+    font-weight: 100;
+}
+#footer-middleBox h4:hover{
+    text-decoration: underline;
+}
+#footer-lowerBox{
+    height: 250px;
+    width: 100%;
+}
+#footer-rejouice{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+#footer-rejouice span{
+    font-size: 24.5vw;
+    color: white;
+    font-weight: 100;
+    font-family: rejoy;
+    display: block;
+    line-height: 26vh;
+}
+#footer-rejouice div{
+    position: absolute;
+    top: -265px;
+    z-index: 1;
+    height: 260px;
+    width: 100%;
+    background-color: #0E0E0E;
+}
